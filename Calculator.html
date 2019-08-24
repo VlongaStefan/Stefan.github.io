@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width-device-width, initial-scale=1">  
+		<link rel="stylesheet" href="resetstyle.css"/>
+		<link rel="stylesheet" href="CalculatorCss.css"/>
+		<link rel="icon" href="C.jfif"/>
+		<script src="CalculatorJs.js"></script>
+		<title> Calculator </title>
+	</head>
+	<body>
+		<nav class="nav-main">
+			<div class="btn-toggle-nav"></div>
+			<ul>
+				<li> <a href="index.html.html"> Home </a> </li>
+				<li> <a href="Calculator.html"> Calculator </a> </li>
+				<li> <a href="Random Number.html"> Number Picker </a> </li>
+				<li> <a href="Convertor de unitati.html"> Convertor de unitati </a> </li>
+			</ul>
+		</nav>
+		<h1 class="center"> CALCULATOR </h1>
+		<div id="center">
+			<form>
+				<span class="aliniat"> Introdu primul număr:</span> <span class="aliniat1"> <input type="text" id="primulNumar" value="" class="input"/> </span>
+				<br/>
+				<span class="aliniat2"> Introdu al doilea număr: </span> <input type="text" id="alDoileaNumar" value="" class="input"/>
+				<br/>
+				<br/>
+				<input type="button" value="Adună!" onclick="adunare()" class="buton">
+				<input type="button" value="Scade!" onclick="scadere()" class="buton">
+				<input type="button" value="Înmulțește!" onclick="inmultire()" class="buton">
+				<input type="button" value="Împarte!" onclick="impartire()" class="buton">
+				<input type="button" value="Ridică la putere!" onclick="ridicareLaPutere()" class="buton">
+				<div class="da">
+					<p class="togglebutton1"> Afișează valoarea absolută </p>
+					<div class="conteiner">
+						<div class="toggle-btn" onclick="this.classList.toggle('active');apasare1();">
+							<div class="inner-circle"></div>
+						</div>
+					</div>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<p id="rezultat"> Răspuns: </p>
+			</form>
+		</div>
+	</body>
+</html>
